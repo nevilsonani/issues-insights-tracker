@@ -34,7 +34,7 @@ A modern, full-stack issue and insights tracker for SaaS teams. Built with FastA
 ### 1. Clone & Setup
 ```bash
 # Clone repo
- git clone <repo-url>
+ git clone https://github.com/nevilsonani/issues-insights-tracker.git
  cd mini-saas-tracker
 
 # Copy .env files as needed (see .env.example)
@@ -46,7 +46,6 @@ docker-compose up --build
 ```
 - Frontend: http://localhost:3000
 - Backend/API: http://localhost:8000
-- Nginx (optional): http://localhost
 - Swagger docs: http://localhost:8000/api/docs
 - Prometheus metrics: http://localhost:8000/metrics
 
@@ -70,7 +69,6 @@ mini-saas-tracker/
   backend/      # FastAPI app, DB, workers
   frontend/     # SvelteKit app
   worker/       # Background job Docker image
-  nginx/        # Nginx config (optional)
   tests/        # Backend tests
   .github/      # GitHub Actions workflows
   docs/         # Architecture Decision Records (ADR)
@@ -97,7 +95,3 @@ mini-saas-tracker/
 - [SvelteKit Docs](https://kit.svelte.dev/)
 - [Prometheus Python Client](https://github.com/prometheus/client_python)
 
----
-
-## 📝 License
-MIT
